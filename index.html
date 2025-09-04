@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Event Handling and Interactive Elements</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Top tabs-->
+        <header class="top_tabs">
+            
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <button id="colorbtn">Change Background Color</button>
+            <button id="togglebtn">Hide Text</button>
+            <p id="toggletext">The text to be displayed and hidden.</p>
+            
+            
+        </header>
+        <!--Main Area-->
+        <main class="main_area">
+            <!--The form-->
+            <form id="my_form">***** The Form *****<br>
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name"><br>
+                <label for="number">Email: </label>
+                <input type="email" name="email" id="email"><br>
+                <label for="phone">Phone: </label>
+                <input type="tel" name="phone" id="phone"><br>
+                <button type="submit">Submit</button>
+                <br>
+                <p id="errorMessage"></p>
+            </form>
+            <div>
+                <p id="textP">Hover over here to highlight text.</p>
+            </div>
+            
+            <button id="openbtn">Open Modal</button>
+            <div id="modal" style="display: none; transform: translate(-50%S,-50%)background-color: hotpink;">
+                <p>This is modal: Popup element that grab the users attention.</p>
+                <button id="closebtn">Close Modal</button>
+            </div> 
+        </main>
+        <!--Bottom tabs-->
+        <footer class="bottom_tabs">
+            <a href="#">Home</a>
+            <a href="#">Contacts</a>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
